@@ -1,0 +1,78 @@
+site_name: Handy Andy Help Centre
+site_description: How to use Handy Andy, the booking, diary and invoicing tool for the handyperson service.
+copyright: "&copy; LDS Consulting Limited trading as LDS Consultancy"
+
+theme:
+  name: material
+  language: en
+  font:
+    text: Manrope
+    code: JetBrains Mono
+  palette:
+    scheme: lds
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+  icon:
+    logo: material/hammer-screwdriver
+
+extra_css:
+  - assets/site.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Getting started:
+      - getting-started/index.md
+      - Sign in: getting-started/sign-in.md
+      - The four screens: getting-started/the-four-screens.md
+  - Taking a booking:
+      - bookings/index.md
+      - Ask the job and VAT advisor: bookings/job-and-vat-advisor.md
+      - Take a new booking: bookings/new-booking.md
+      - VAT, funding and eligibility: bookings/vat-funding-eligibility.md
+      - Materials and parts: bookings/materials.md
+      - Turn an Outlook appointment into a job: bookings/outlook-appointments.md
+      - Send the confirmation: bookings/confirmation.md
+      - Change a booking: bookings/change-a-booking.md
+      - Cancel a booking: bookings/cancel-a-booking.md
+      - Welfare concerns: bookings/welfare-concerns.md
+  - My Day:
+      - my-day/index.md
+      - Read your day: my-day/read-your-day.md
+      - Arrive, finish and mark done: my-day/arrive-and-finish.md
+      - Take payment at the door: my-day/take-payment.md
+      - Note what you found: my-day/property-notes.md
+      - Raise a concern: my-day/raise-a-concern.md
+  - Invoicing:
+      - invoicing/index.md
+      - Invoice a finished job: invoicing/invoice-a-job.md
+      - Work finished in the diary: invoicing/diary-work.md
+      - Payment links: invoicing/payment-links.md
+      - Cancel an invoice: invoicing/credit-notes.md
+  - Running the service:
+      - service/index.md
+      - Is the service paying for itself: service/paying-for-itself.md
+      - What has been collected: service/collected.md
+      - What would change it: service/what-would-change-it.md
+  - Quick answers: quick-answers.md
